@@ -17,22 +17,22 @@
         </div>
     </header>
     
-    <!-- Título -->
-    <h1 class="text-center text-x1 font-bold text-blue-900 mt-20">PLANTA CaP/ETS</h1>
+     <!-- Título -->
+     <h1 class="text-center text-xl font-bold text-blue-900 mt-20">PLANTA CaP/ETS</h1>
     
-    <!-- Imagem e Pontos Importantes -->
-    <div class="flex justify-center mt-20 space-x-20">
-        <img src="planta.jpg" alt="Mapa da Planta" class="rounded-lg shadow-lg w-1/4">
-        <div class="bg-gray-300 p-3 shadow-lg w-1/4 text-sm">
-            <h2 class="font-bold">PONTOS IMPORTANTES</h2>
-            <ul>
-                <li class="text-red-600">🔴 Ponto de encontro</li>
-                <li class="text-black">⚫ Rotas</li>
-                <li class="text-red-600">🔴 Ponto de encontro</li>
-                <li class="text-red-600">🔴 Ponto de encontro</li>
-            </ul>
-        </div>
-    </div>
+     <!-- Imagem e Pontos Importantes -->
+     <div class="flex justify-center mt-20 space-x-20">
+         <img src="planta.jpg" alt="Mapa da Planta" class="rounded-lg shadow-lg w-1/4">
+         <div class="bg-gray-300 p-3 shadow-lg w-1/4 text-sm">
+             <h2 class="font-bold">PONTOS IMPORTANTES</h2>
+             <ul id="lista-pontos">
+                 <li class="text-gray-600 ponto">🔴 Ponto de encontro</li>
+                 <li class="text-gray-600 ponto">⚫ Rotas</li>
+                 <li class="text-gray-600 ponto">🔴 Ponto de encontro</li>
+                 <li class="text-gray-600 ponto">🔴 Ponto de encontro</li>
+             </ul>
+         </div>
+     </div>
     
     <!-- Tabela de Siglas e Significado -->
     <div class="bg-white p-20 shadow-lg mx-20 mt-20 text-sm">
@@ -49,14 +49,17 @@
         </div>
     </div>
 
-     <!--Card -->
-     <div class="bg-orange-500 text-black p-10 mx-auto max-w-4xl border-2 border-black flex">
+    <!-- Espaço entre Siglas e Card de Emergência -->
+    <div class="mt-10"></div>
+
+    <!--Card -->
+    <div class="bg-orange-500 text-black p-10 mx-auto max-w-4xl border-2 border-black flex">
         <!-- Esquerda: Informação de Emergência -->
         <div class="w-1/2 flex flex-col items-center justify-center border-r-2 border-black pr-4">
-            <h2 class="font-bold text-lg">EMERGÊNCIA</h2>
-            <p class="text-md">LIGUE</p>
-            <p class="text-3xl font-bold tracking-widest">1 2 3 4</p>
-            <p class="text-md">(19) 2103-1234</p>
+            <h2 class="font-bold text-2xl">EMERGÊNCIA</h2>
+            <p class="text-lg">LIGUE</p>
+            <p class="text-4xl font-bold tracking-widest">1 2 3 4</p>
+            <p class="text-lg">(19) 2103-1234</p>
         </div>
     
         <!-- Direita: Som e Procedimento -->
