@@ -2,32 +2,32 @@ import React, { useState } from 'react';
 
 const pontos = [
   // PONTOS DE ENCONTRO
-  { id: 'PE01', tipo: 'ponto-encontro', x: '18%', y: '10%' },
-  { id: 'PE02', tipo: 'ponto-encontro', x: '22%', y: '18%' },
-  { id: 'PE03', tipo: 'ponto-encontro', x: '26%', y: '24%' },
-  { id: 'PE04', tipo: 'ponto-encontro', x: '30%', y: '30%' },
-  { id: 'PE05', tipo: 'ponto-encontro', x: '35%', y: '36%' },
-  { id: 'PE06', tipo: 'ponto-encontro', x: '40%', y: '42%' },
-  { id: 'PE07', tipo: 'ponto-encontro', x: '45%', y: '47%' },
-  { id: 'PE08', tipo: 'ponto-encontro', x: '48%', y: '52%' },
-  { id: 'PE09', tipo: 'ponto-encontro', x: '52%', y: '57%' },
-  { id: 'PE10', tipo: 'ponto-encontro', x: '55%', y: '62%' },
-  { id: 'PE11', tipo: 'ponto-encontro', x: '58%', y: '66%' },
-  { id: 'PE12', tipo: 'ponto-encontro', x: '61%', y: '69%' },
-  { id: 'PE13', tipo: 'ponto-encontro', x: '64%', y: '72%' },
-  { id: 'PE14', tipo: 'ponto-encontro', x: '68%', y: '75%' },
+  { id: 'pe2', tipo: 'ponto-encontro', x: '4%', y: '25%' },
+  { id: 'pe4', tipo: 'ponto-encontro', x: '6%', y: '40%' },
+  { id: 'pe5', tipo: 'ponto-encontro', x: '9%', y: '50%' },
+  { id: 'pe10', tipo: 'ponto-encontro', x: '14%', y: '65%' },
+  { id: 'pe12', tipo: 'ponto-encontro', x: '16%', y: '52%' },
+  { id: 'pe9', tipo: 'ponto-encontro', x: '15%', y: '30%' },
+  { id: 'pe15', tipo: 'ponto-encontro', x: '45%', y: '47%' },
+  { id: 'pe21', tipo: 'ponto-encontro', x: '48%', y: '52%' },
+  { id: 'pe169', tipo: 'ponto-encontro', x: '52%', y: '57%' },
+  { id: 'pe300', tipo: 'ponto-encontro', x: '55%', y: '62%' },
+  { id: 'pe25', tipo: 'ponto-encontro', x: '58%', y: '66%' },
+  { id: 'pe100', tipo: 'ponto-encontro', x: '61%', y: '69%' },
+  { id: 'pe30', tipo: 'ponto-encontro', x: '64%', y: '72%' },
+  { id: 'pe32', tipo: 'ponto-encontro', x: '68%', y: '75%' },
 
   // REFERÊNCIAS 1-33
-  { id: '01', tipo: 'referencia', x: '20%', y: '12%' },
-  { id: '02', tipo: 'referencia', x: '24%', y: '16%' },
-  { id: '03', tipo: 'referencia', x: '28%', y: '22%' },
-  { id: '04', tipo: 'referencia', x: '32%', y: '28%' },
-  { id: '05', tipo: 'referencia', x: '37%', y: '34%' },
-  { id: '06', tipo: 'referencia', x: '42%', y: '40%' },
-  { id: '07', tipo: 'referencia', x: '47%', y: '45%' },
-  { id: '08', tipo: 'referencia', x: '50%', y: '50%' },
+  { id: '01', tipo: 'referencia',x: '4%', y: '25%' },
+  { id: '02', tipo: 'referencia', x: '6%', y: '40%' },
+  { id: '03', tipo: 'referencia', x: '9%', y: '50%' },
+  { id: '04', tipo: 'referencia', x: '14%', y: '65%' },
+  { id: '05', tipo: 'referencia', x: '16%', y: '52%' },
+  { id: '06', tipo: 'referencia', x: '45%', y: '47%' },
+  { id: '07', tipo: 'referencia', x: '48%', y: '52%' },
+  { id: '08', tipo: 'referencia', x: '52%', y: '57%' },
   { id: '09', tipo: 'referencia', x: '54%', y: '55%' },
-  { id: '10', tipo: 'referencia', x: '58%', y: '59%' },
+  { id: '10', tipo: 'referencia', x: '58%', y: '66%' },
   { id: '11', tipo: 'referencia', x: '61%', y: '63%' },
   { id: '12', tipo: 'referencia', x: '64%', y: '66%' },
   { id: '13', tipo: 'referencia', x: '67%', y: '69%' },
@@ -58,21 +58,21 @@ export default function Mapa() {
 
   return (
     <div className="flex justify-center mt-10 space-x-10">
-      <div className="relative w-[600px] h-[800px] bg-gray-900 rounded-lg shadow-lg border overflow-hidden">
+      <div className="relative w-[1600px] h-[700px] bg-gray-300 rounded-lg shadow-lg border overflow-hidden">
 
         {/* DESENHO DOS PRÉDIOS */}
-        <div className="absolute bg-gray-600 rounded-md" style={{ width: '80px', height: '60px', left: '18%', top: '15%' }} />
-        <div className="absolute bg-gray-600 rounded-md" style={{ width: '100px', height: '70px', left: '40%', top: '30%' }} />
-        <div className="absolute bg-gray-600 rounded-md" style={{ width: '120px', height: '60px', left: '62%', top: '50%' }} />
-        <div className="absolute bg-gray-600 rounded-md" style={{ width: '140px', height: '80px', left: '70%', top: '70%' }} />
+        <div className="absolute bg-gray-400 rounded-md" style={{ width: '80px', height: '60px', left: '18%', top: '15%' }} />
+        <div className="absolute bg-gray-400 rounded-md" style={{ width: '100px', height: '70px', left: '40%', top: '30%' }} />
+        <div className="absolute bg-gray-400 rounded-md" style={{ width: '120px', height: '60px', left: '62%', top: '50%' }} />
+        <div className="absolute bg-gray-400 rounded-md" style={{ width: '140px', height: '80px', left: '70%', top: '70%' }} />
 
         {/* CERCA */}
         <svg className="absolute w-full h-full" style={{ pointerEvents: 'none' }}>
           {/* Cercas desenhadas com linhas */}
-          <line x1="10%" y1="5%" x2="90%" y2="5%" stroke="white" strokeWidth="2" strokeDasharray="5,5" />
-          <line x1="90%" y1="5%" x2="90%" y2="95%" stroke="white" strokeWidth="2" strokeDasharray="5,5" />
-          <line x1="90%" y1="95%" x2="10%" y2="95%" stroke="white" strokeWidth="2" strokeDasharray="5,5" />
-          <line x1="10%" y1="95%" x2="10%" y2="5%" stroke="white" strokeWidth="2" strokeDasharray="5,5" />
+          <line x1="2%" y1="5%" x2="98%" y2="5%" stroke="white" strokeWidth="" strokeDasharray="5,5" />
+          <line x1="98%" y1="5%" x2="98%" y2="95%" stroke="white" strokeWidth="2" strokeDasharray="5,5" />
+          <line x1="98%" y1="95%" x2="2%" y2="95%" stroke="white" strokeWidth="2" strokeDasharray="5,5" />
+          <line x1="2%" y1="95%" x2="2%" y2="5%" stroke="white" strokeWidth="2" strokeDasharray="5,5" />
 
           {/* Caminhos desenhados */}
           <path d="M18% 10% C22% 15%, 26% 20%, 30% 30%" stroke="#00ff00" strokeWidth="2" fill="none" />
@@ -83,22 +83,23 @@ export default function Mapa() {
 
         {/* PONTOS */}
         {pontos.map((ponto) => (
-          <div
-            key={ponto.id}
-            onClick={() => setAtivo(ponto)}
-            className={`absolute cursor-pointer text-white text-xs font-bold flex items-center justify-center 
-              ${ponto.tipo === 'ponto-encontro' ? 'bg-green-600' : 'bg-red-600'}
-              w-6 h-6 rounded-full hover:scale-110 transition-all`}
-            style={{
-              left: ponto.x,
-              top: ponto.y,
-              transform: 'translate(-50%, -50%)',
-            }}
-            title={ponto.id}
-          >
-            {ponto.tipo === 'ponto-encontro' ? ponto.id.replace('PE', '') : ponto.id}
-          </div>
-        ))}
+  <div
+    key={ponto.id}
+    onClick={() => setAtivo(ponto)}
+    className={`absolute cursor-pointer text-white text-xs font-bold flex items-center justify-center 
+      ${ponto.tipo === 'ponto-encontro' ? 'bg-green-600 w-10 h-6 rounded-sm' : 'bg-red-600 w-8 h-8 rounded-full'}
+      hover:scale-110 transition-all`}
+    style={{
+      left: ponto.x,
+      top: ponto.y,
+      transform: 'translate(-50%, -50%)',
+    }}
+    title={ponto.id}
+  >
+    {ponto.tipo === 'ponto-encontro' ? ponto.id.replace('PE', '') : ponto.id}
+  </div>
+))}
+
 
         {/* INFORMAÇÕES DO PONTO */}
         {ativo && (
