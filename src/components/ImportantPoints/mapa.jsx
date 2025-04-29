@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import mapaBase from '../../assets/IMGmapacorrigido.PNG';
+
 
 const pontos = [
   // PONTOS DE ENCONTRO
@@ -18,7 +20,7 @@ const pontos = [
   { id: 'pe32', tipo: 'ponto-encontro', x: '68%', y: '75%' },
 
   // REFERÊNCIAS 1-33
-  { id: '01', tipo: 'referencia',x: '4%', y: '25%' },
+  { id: '01', tipo: 'referencia', x: '4%', y: '25%' },
   { id: '02', tipo: 'referencia', x: '6%', y: '40%' },
   { id: '03', tipo: 'referencia', x: '9%', y: '50%' },
   { id: '04', tipo: 'referencia', x: '14%', y: '65%' },
@@ -58,48 +60,32 @@ export default function Mapa() {
 
   return (
     <div className="flex justify-center mt-10 space-x-10">
-      <div className="relative w-[1600px] h-[700px] bg-gray-300 rounded-lg shadow-lg border overflow-hidden">
-
-        {/* DESENHO DOS PRÉDIOS */}
-        <div className="absolute bg-gray-400 rounded-md" style={{ width: '80px', height: '60px', left: '18%', top: '15%' }} />
-        <div className="absolute bg-gray-400 rounded-md" style={{ width: '100px', height: '70px', left: '40%', top: '30%' }} />
-        <div className="absolute bg-gray-400 rounded-md" style={{ width: '120px', height: '60px', left: '62%', top: '50%' }} />
-        <div className="absolute bg-gray-400 rounded-md" style={{ width: '140px', height: '80px', left: '70%', top: '70%' }} />
-
-        {/* CERCA */}
-        <svg className="absolute w-full h-full" style={{ pointerEvents: 'none' }}>
-          {/* Cercas desenhadas com linhas */}
-          <line x1="2%" y1="5%" x2="98%" y2="5%" stroke="white" strokeWidth="" strokeDasharray="5,5" />
-          <line x1="98%" y1="5%" x2="98%" y2="95%" stroke="white" strokeWidth="2" strokeDasharray="5,5" />
-          <line x1="98%" y1="95%" x2="2%" y2="95%" stroke="white" strokeWidth="2" strokeDasharray="5,5" />
-          <line x1="2%" y1="95%" x2="2%" y2="5%" stroke="white" strokeWidth="2" strokeDasharray="5,5" />
-
-          {/* Caminhos desenhados */}
-          <path d="M18% 10% C22% 15%, 26% 20%, 30% 30%" stroke="#00ff00" strokeWidth="2" fill="none" />
-          <path d="M30% 30% C35% 35%, 40% 40%, 45% 47%" stroke="#00ff00" strokeWidth="2" fill="none" />
-          <path d="M45% 47% C50% 50%, 55% 55%, 58% 66%" stroke="#00ff00" strokeWidth="2" fill="none" />
-          {/* você pode adicionar mais caminhos aqui */}
-        </svg>
-
+      <div
+        className="relative w-[1600px] h-[700px] rounded-lg shadow-lg border overflow-hidden"
+        style={{
+          backgroundImage: `url(${mapaBase})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         {/* PONTOS */}
         {pontos.map((ponto) => (
-  <div
-    key={ponto.id}
-    onClick={() => setAtivo(ponto)}
-    className={`absolute cursor-pointer text-white text-xs font-bold flex items-center justify-center 
-      ${ponto.tipo === 'ponto-encontro' ? 'bg-green-600 w-10 h-6 rounded-sm' : 'bg-red-600 w-8 h-8 rounded-full'}
-      hover:scale-110 transition-all`}
-    style={{
-      left: ponto.x,
-      top: ponto.y,
-      transform: 'translate(-50%, -50%)',
-    }}
-    title={ponto.id}
-  >
-    {ponto.tipo === 'ponto-encontro' ? ponto.id.replace('PE', '') : ponto.id}
-  </div>
-))}
-
+          <div
+            key={ponto.id}
+            onClick={() => setAtivo(ponto)}
+            className={`absolute cursor-pointer text-white text-xs font-bold flex items-center justify-center 
+              ${ponto.tipo === 'ponto-encontro' ? 'bg-green-600 w-10 h-6 rounded-sm' : 'bg-red-600 w-8 h-8 rounded-full'}
+              hover:scale-110 transition-all`}
+            style={{
+              left: ponto.x,
+              top: ponto.y,
+              transform: 'translate(-50%, -50%)',
+            }}
+            title={ponto.id}
+          >
+            {ponto.tipo === 'ponto-encontro' ? ponto.id.replace('pe', '') : ponto.id}
+          </div>
+        ))}
 
         {/* INFORMAÇÕES DO PONTO */}
         {ativo && (
@@ -111,4 +97,3 @@ export default function Mapa() {
     </div>
   );
 }
-{/* Caminhos desenhados */}
