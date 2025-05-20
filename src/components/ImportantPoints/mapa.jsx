@@ -1,6 +1,40 @@
 import React, { useState } from 'react';
-import mapaBase from '../../assets/IMGmap4.PNG';
+import mapaBase from '../../assets/IMGmapa.jpg';
 
+
+const predios = [
+  { id: '126', tipo: 'numero-predio', x: '79.5%', y: '17.5%' },
+  { id: '129', tipo: 'numero-predio', x: '37%', y: '11.5%' },
+  { id: '140', tipo: 'numero-predio', x: '79%', y: '23%' },
+  { id: '147', tipo: 'numero-predio', x: '81.8%', y: '16%' },
+  { id: '148', tipo: 'numero-predio', x: '84%', y: '16.5%' },
+  { id: '149', tipo: 'numero-predio', x: '85.5%', y: '17.5%' },
+  { id: '160', tipo: 'numero-predio', x: '69%', y: '37%' },
+  { id: '165', tipo: 'numero-predio', x: '74.8%', y: '28%' },
+  { id: '170', tipo: 'numero-predio', x: '84.5%', y: '35.2%' },
+  { id: '183', tipo: 'numero-predio', x: '90%', y: '63%' },
+  { id: '200', tipo: 'numero-predio', x: '63%', y: '66%' },
+  { id: '204', tipo: 'numero-predio', x: '57.5%', y: '70.5%' },
+  { id: '205', tipo: 'numero-predio', x: '60%', y: '66.5%' },
+  { id: '206', tipo: 'numero-predio', x: '60.5%', y: '69%' },
+  { id: '220', tipo: 'numero-predio', x: '65%', y: '69%' },
+  { id: '320', tipo: 'numero-predio', x: '68%', y: '27%' },
+  { id: '325', tipo: 'numero-predio', x: '71%', y: '29%' },
+  { id: '340', tipo: 'numero-predio', x: '59%', y: '12%' },
+  { id: '341', tipo: 'numero-predio', x: '72%', y: '12%' },
+  { id: '350', tipo: 'numero-predio', x: '48%', y: '13%' },
+  { id: '360', tipo: 'numero-predio', x: '58.2%', y: '34%' },
+  { id: '370', tipo: 'numero-predio', x: '46.2%', y: '44.5%' },
+  { id: '390', tipo: 'numero-predio', x: '41.8%', y: '10%' },
+  { id: '401', tipo: 'numero-predio', x: '40.2%', y: '60%' },
+  { id: '536', tipo: 'numero-predio', x: '15%', y: '71%' },
+  { id: '550', tipo: 'numero-predio', x: '14%', y: '27%' },
+  { id: '551', tipo: 'numero-predio', x: '31%', y: '13%' },
+  { id: '560', tipo: 'numero-predio', x: '11.5%', y: '67%' },
+  { id: '590', tipo: 'numero-predio', x: '10%', y: '63.5%' },
+  { id: '600', tipo: 'numero-predio', x: '13%', y: '60%' },
+  { id: '640', tipo: 'numero-predio', x: '19.5%', y: '73%' },
+];
 
 const pontos = [
   // PONTOS DE ENCONTRO
@@ -21,41 +55,40 @@ const pontos = [
   
 
   { id: '01', tipo: 'referencia', x: '3%', y: '50%' },
-{ id: '02', tipo: 'referencia', x: '9.2%', y: '40%' },
-{ id: '03', tipo: 'referencia', x: '13%', y: '48%' },
-{ id: '04', tipo: 'referencia', x: '29%', y: '90%' },
-{ id: '05', tipo: 'referencia', x: '22.5%', y: '52.5%' },
-{ id: '06', tipo: 'referencia', x: '17.5%', y: '25%' },
-{ id: '07', tipo: 'referencia', x: '22%', y: '20%' },
-{ id: '08', tipo: 'referencia', x: '41%', y: '90%' },
-{ id: '09', tipo: 'referencia', x: '29%', y: '34%' },
-{ id: '10', tipo: 'referencia', x: '32%', y: '47%' },
-{ id: '11', tipo: 'referencia', x: '32.5%', y: '29%' },
-{ id: '12', tipo: 'referencia', x: '36%', y: '21.5%' },
-{ id: '13', tipo: 'referencia', x: '38.5%', y: '36%' },
-{ id: '14', tipo: 'referencia', x: '41%', y: '44%' },
-{ id: '15', tipo: 'referencia', x: '45.5%', y: '57%' },
-{ id: '16', tipo: 'referencia', x: '60.5%', y: '91%' },
-{ id: '17', tipo: 'referencia', x: '65.5%', y: '96%' },
-{ id: '18', tipo: 'referencia', x: '65.5%', y: '66%' },
-{ id: '19', tipo: 'referencia', x: '63.5%', y: '42%' },
-{ id: '20', tipo: 'referencia', x: '65%', y: '38%' },
-{ id: '21', tipo: 'referencia', x: '62%', y: '20%' },
-{ id: '22', tipo: 'referencia', x: '68%', y: '17%' },
-{ id: '23', tipo: 'referencia', x: '56%', y: '33%' },
-{ id: '24', tipo: 'referencia', x: '58.5%', y: '47%' },
-{ id: '25', tipo: 'referencia', x: '61.5%', y: '53%' },
-{ id: '26', tipo: 'referencia', x: '64.5%', y: '66%' },
-{ id: '27', tipo: 'referencia', x: '95%', y: '95%' },
-{ id: '28', tipo: 'referencia', x: '80%', y: '66%' },
-{ id: '29', tipo: 'referencia', x: '84%', y: '53%' },
-{ id: '30', tipo: 'referencia', x: '71%', y: '26.5%' },
-{ id: '31', tipo: 'referencia', x: '66%', y: '17%' },
-{ id: '32', tipo: 'referencia', x: '73%', y: '14%' },
-{ id: '33', tipo: 'referencia', x: '70%', y: '12%' },
+  { id: '02', tipo: 'referencia', x: '9.2%', y: '40%' },
+  { id: '03', tipo: 'referencia', x: '13%', y: '48%' },
+  { id: '04', tipo: 'referencia', x: '29%', y: '90%' },
+  { id: '05', tipo: 'referencia', x: '22.5%', y: '52.5%' },
+  { id: '06', tipo: 'referencia', x: '17.5%', y: '25%' },
+  { id: '07', tipo: 'referencia', x: '22%', y: '20%' },
+  { id: '08', tipo: 'referencia', x: '41%', y: '90%' },
+  { id: '09', tipo: 'referencia', x: '29%', y: '34%' },
+  { id: '10', tipo: 'referencia', x: '32%', y: '47%' },
+  { id: '11', tipo: 'referencia', x: '32.5%', y: '29%' },
+  { id: '12', tipo: 'referencia', x: '36%', y: '21.5%' },
+  { id: '13', tipo: 'referencia', x: '38.5%', y: '36%' },
+  { id: '14', tipo: 'referencia', x: '41%', y: '44%' },
+  { id: '15', tipo: 'referencia', x: '45.5%', y: '57%' },
+  { id: '16', tipo: 'referencia', x: '53%', y: '84%' },
+  { id: '17', tipo: 'referencia', x: '58%', y: '88%' },
+  { id: '18', tipo: 'referencia', x: '65.5%', y: '66%' },
+  {  id: '19', tipo: 'referencia', x: '63.5%', y: '42%' },
+  { id: '20', tipo: 'referencia', x: '65%', y: '38%' },
+  { id: '21', tipo: 'referencia', x: '62%', y: '20%' },
+  { id: '22', tipo: 'referencia', x: '68%', y: '17%' }  ,
+  {  id: '23', tipo: 'referencia', x: '56%', y: '33%' },
+  { id: '24', tipo: 'referencia', x: '58.5%', y: '47%' },
+  { id: '25', tipo: 'referencia', x: '61.5%', y: '53%' },
+  { id: '26', tipo: 'referencia', x: '60%', y: '66%' },
+  { id: '27', tipo: 'referencia', x: '92%', y: '82%' },
+  { id: '28', tipo: 'referencia', x: '80%', y: '66%' },
+  { id: '29', tipo: 'referencia', x: '84%', y: '53%' },
+  { id: '30', tipo: 'referencia', x: '71%', y: '26.5%' },
+  { id: '31', tipo: 'referencia', x: '66%', y: '17%' },
+  { id: '32', tipo: 'referencia', x: '73%', y: '14%' },
+  { id: '33', tipo: 'referencia', x: '70%', y: '12%' },
 ];
 
-//hhfvbbs
 
 export default function Mapa() {
   const [ativo, setAtivo] = useState(null);
@@ -70,6 +103,21 @@ export default function Mapa() {
           backgroundPosition: 'center',
         }}
       >
+        {predios.map((predio) => (
+  <div
+    key={predio.id}
+    className="absolute text-black-900 font-bold text-xs bg-black-300 px-1 rounded shadow"
+    style={{
+      left: predio.x,
+      top: predio.y,
+      transform: 'translate(-50%, -50%)',
+    }}
+    title={`Prédio ${predio.id}`}
+  >
+    {predio.id}
+  </div>
+))}
+
         {/* PONTOS */}
         {pontos.map((ponto) => (
           <div
@@ -90,7 +138,7 @@ export default function Mapa() {
 
         ))}
         {/* LEGENDA */}
-        <div className="absolute bottom-10 left-2 bg-white/80 p-2 rounded shadow text-xs">
+        <div className="absolute bottom-13 left-12 bg-white/80 p-2 rounded shadow text-xs">
   <div className="flex items-center space-x-1 mb-1">
     <div className="w-3.5 h-3.5 rounded-full bg-red-600" />
     <span className="text-gray-800 font-medium">Ponto de Referência</span>
