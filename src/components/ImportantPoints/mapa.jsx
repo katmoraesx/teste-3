@@ -3,51 +3,73 @@ import mapaBase from '../../assets/IMGmapa.jpg';
 
 
 const predios = [
-  { id: '126', tipo: 'numero-predio', x: '79.5%', y: '17.5%' },
-  { id: '129', tipo: 'numero-predio', x: '37%', y: '11.5%' },
-  { id: '140', tipo: 'numero-predio', x: '79%', y: '23%' },
-  { id: '147', tipo: 'numero-predio', x: '81.8%', y: '16%' },
-  { id: '148', tipo: 'numero-predio', x: '84%', y: '16.5%' },
-  { id: '149', tipo: 'numero-predio', x: '85.5%', y: '17.5%' },
-  { id: '160', tipo: 'numero-predio', x: '69%', y: '37%' },
+// a fazer
+
   { id: '165', tipo: 'numero-predio', x: '74.8%', y: '28%' },
-  { id: '170', tipo: 'numero-predio', x: '84.5%', y: '35.2%' },
-  { id: '183', tipo: 'numero-predio', x: '90%', y: '63%' },
-  { id: '200', tipo: 'numero-predio', x: '63%', y: '66%' },
-  { id: '204', tipo: 'numero-predio', x: '57.5%', y: '70.5%' },
-  { id: '205', tipo: 'numero-predio', x: '60%', y: '66.5%' },
-  { id: '206', tipo: 'numero-predio', x: '60.5%', y: '69%' },
-  { id: '220', tipo: 'numero-predio', x: '65%', y: '69%' },
   { id: '320', tipo: 'numero-predio', x: '68%', y: '27%' },
   { id: '325', tipo: 'numero-predio', x: '71%', y: '29%' },
-  { id: '340', tipo: 'numero-predio', x: '59%', y: '12%' },
-  { id: '341', tipo: 'numero-predio', x: '72%', y: '12%' },
-  { id: '350', tipo: 'numero-predio', x: '48%', y: '13%' },
-  { id: '360', tipo: 'numero-predio', x: '58.2%', y: '34%' },
-  { id: '370', tipo: 'numero-predio', x: '46.2%', y: '44.5%' },
-  { id: '390', tipo: 'numero-predio', x: '41.8%', y: '10%' },
-  { id: '401', tipo: 'numero-predio', x: '40.2%', y: '60%' },
-  { id: '536', tipo: 'numero-predio', x: '15%', y: '71%' },
-  { id: '550', tipo: 'numero-predio', x: '14%', y: '27%' },
-  { id: '551', tipo: 'numero-predio', x: '31%', y: '13%' },
-  { id: '560', tipo: 'numero-predio', x: '11.5%', y: '67%' },
-  { id: '590', tipo: 'numero-predio', x: '10%', y: '63.5%' },
-  { id: '600', tipo: 'numero-predio', x: '13%', y: '60%' },
-  { id: '640', tipo: 'numero-predio', x: '19.5%', y: '73%' },
+  { id: '300', tipo: 'numero-predio', x: '60.5%', y: '69%' },
+
+  { id: '169', tipo: 'numero-predio', x: '84.5%', y: '35.2%' },
+  { id: '151', tipo: 'numero-predio', x: '60.5%', y: '69%' },
+  { id: '150', tipo: 'numero-predio', x: '.5%', y: '35.2%' },
+  { id: '151', tipo: 'numero-predio', x: '60.5%', y: '69%' },
+
+
+
+// prontos 
+
+  { id: '180', tipo: 'numero-predio', x: '72%', y: '64%' },
+  { id: '183', tipo: 'numero-predio', x: '71.5%', y: '72%' },
+  { id: '100', tipo: 'numero-predio', x: '67.6%', y: '66.2%' },
+  { id: '106', tipo: 'numero-predio', x: '62.5%', y: '72.9%' },
+  { id: '220', tipo: 'numero-predio', x: '60%', y: '79%' },
+  { id: '205', tipo: 'numero-predio', x: '60%', y: '76%' },
+  { id: '200', tipo: 'numero-predio', x: '56%', y: '76%' },
+  { id: '204', tipo: 'numero-predio', x: '50.5%', y: '82%' },
+  { id: '400', tipo: 'numero-predio', x: '40.5%', y: '84.5%' },
+  { id: '551', tipo: 'numero-predio', x: '26.7%', y: '45%' },
+  { id: '550', tipo: 'numero-predio', x: '24.5%', y: '54%' },
+  { id: '590', tipo: 'numero-predio', x: '17%', y: '69.7%' },
+  { id: '560', tipo: 'numero-predio', x: '17%', y: '74%' },
+  { id: '540', tipo: 'numero-predio', x: '26.5%', y: '77%' },
+  { id: '530', tipo: 'numero-predio', x: '22.5%', y: '76%' },
+  { id: '600', tipo: 'numero-predio', x: '26.5%', y: '66%' },
+  { id: '536', tipo: 'numero-predio', x: '23.5%', y: '68%' },
+  { id: '341', tipo: 'numero-predio', x: '52%', y: '19.9%' },
+  { id: '149', tipo: 'numero-predio', x: '63.5%', y: '20%' },
+  { id: '140', tipo: 'numero-predio', x: '64%', y: '26%' },
+  { id: '147', tipo: 'numero-predio', x: '60%', y: '16.7%' },
+  { id: '148', tipo: 'numero-predio', x: '65.4%', y: '14.3%' },
+  { id: '170', tipo: 'numero-predio', x: '69.5%', y: '44.5%' },
+  { id: '160', tipo: 'numero-predio', x: '65%', y: '46%' },
+  { id: '360', tipo: 'numero-predio', x: '52.4%', y: '52.6%' },
+  { id: '370', tipo: 'numero-predio', x: '45.2%', y: '55%' },
+  { id: '390', tipo: 'numero-predio', x: '34.3%', y: '37%' },
+  { id: '129', tipo: 'numero-predio', x: '31%', y: '23%' }, 
+  { id: '401', tipo: 'numero-predio', x: '43.8%', y: '76.5%' },
+  { id: '340', tipo: 'numero-predio', x: '48%', y: '30%' },
+  { id: '350', tipo: 'numero-predio', x: '43.5%', y: '33.8%' },
+
+
 ];
 
 const pontos = [
   // PONTOS DE ENCONTRO
 
-  { id: 'P.E', tipo: 'ponto-encontro', x: '18.4%', y: '62%' },       // Alinhado com ref 02
+  { id: 'P.E', tipo: 'ponto-encontro', x: '18.4%', y: '62%' },   //  com ref 02
+  { id: 'P.E', tipo: 'ponto-encontro', x: '25.3%', y: '80.7%' } ,// Igual ref 4
+  { id: 'P.E', tipo: 'ponto-encontro', x: '34%', y: '66.5%' },   // Igual ref 5
   { id: 'P.E', tipo: 'ponto-encontro', x: '31%', y: '55.7%' } ,  // Igual ref 11
   { id: 'P.E', tipo: 'ponto-encontro', x: '41%', y: '55.7%' } ,  // Igual ref 11
+  { id: 'P.E', tipo: 'ponto-encontro', x: '40.1%', y: '39%' },   // Igual ref 12
+  { id: 'P.E', tipo: 'ponto-encontro', x: '48.8%', y: '74%' },    // Igual ref 15
   { id: 'P.E', tipo: 'ponto-encontro', x: '56.9%', y: '51%' },   // Igual ref 19
   { id: 'P.E', tipo: 'ponto-encontro', x: '56.4%', y: '37.2%' }, // Igual ref 20
-  { id: 'P.E', tipo: 'ponto-encontro', x: '55.5%', y: '28.5%' },  // Igual ref 21
-  { id: 'P.E', tipo: 'ponto-encontro', x: '63.1%', y: '61.5%' },    // Igual ref 25
-  { id: 'P.E', tipo: 'ponto-encontro', x: '67.5%', y: '70.5%' },   // Igual ref 26
-  { id: 'P.E', tipo: 'ponto-encontro', x: '72%', y: '40%' },    // Igual ref 30
+  { id: 'P.E', tipo: 'ponto-encontro', x: '55.5%', y: '28.5%' }, // Igual ref 21
+  { id: 'P.E', tipo: 'ponto-encontro', x: '63.1%', y: '61.5%' }, // Igual ref 25
+  { id: 'P.E', tipo: 'ponto-encontro', x: '67.5%', y: '70.5%' }, // Igual ref 26
+  { id: 'P.E', tipo: 'ponto-encontro', x: '72%', y: '40%' },     // Igual ref 30
   { id: 'P.E', tipo: 'ponto-encontro', x: '69%', y: '19.7%' } ,  // Igual ref 32
 
 
@@ -74,7 +96,7 @@ const pontos = [
   { id: '18', tipo: 'referencia', x: '58%', y: '70%' },
   { id: '19', tipo: 'referencia', x: '56.7%', y: '55%' },
   { id: '20', tipo: 'referencia', x: '56.4%', y: '43.2%' },
-  { id: '21', tipo: 'referencia', x: '53.7%', y: '24.5%' },
+  { id: '21', tipo: 'referencia', x: '51.7%', y: '24.5%' },
   { id: '22', tipo: 'referencia', x: '58.4%', y: '24.2%' },
   { id: '23', tipo: 'referencia', x: '60.9%', y: '43.2%' },
   { id: '24', tipo: 'referencia', x: '61.9%', y: '51%' },
@@ -121,10 +143,10 @@ export default function Mapa() {
         {/* PONTOS */}
         {pontos.map((ponto) => (
           <div
-  key={ponto.id}
+   key={ponto.id}
   onClick={() => setAtivo(ponto)}
-  className={`absolute cursor-pointer text-white text-base font-bold flex items-center justify-center 
-    ${ponto.tipo === 'ponto-encontro' ? 'bg-green-600 w-8 h-5 rounded-sm' : 'bg-red-600 w-6 h-6 rounded-full'}
+  className={`absolute cursor-pointer text-white text-base font-medium flex items-center justify-center 
+    ${ponto.tipo === 'ponto-encontro' ? 'bg-green-600 w-8 h-5 rounded-sm' : 'bg-red-700 w-6 h-6 rounded-full'}
     hover:scale-110 transition-all`}
   style={{
     left: ponto.x,
@@ -140,11 +162,11 @@ export default function Mapa() {
         {/* LEGENDA */}
         <div className="absolute bottom-13 left-12 bg-white/80 p-2 rounded shadow text-xs">
   <div className="flex items-center space-x-1 mb-1">
-    <div className="w-3.5 h-3.5 rounded-full bg-red-600" />
+    <div className="w-3.5 h-3.5 rounded-full bg-red-700" />
     <span className="text-gray-800 font-medium">Ponto de Referência</span>
   </div>
   <div className="flex items-center space-x-1">
-    <div className="w-5 h-3 rounded-sm bg-green-600" />
+    <div className="w-5 h-3 rounded-sm bg-green-700" />
     <span className="text-gray-800 font-medium">Ponto de Encontro</span>
   </div>
 </div>
