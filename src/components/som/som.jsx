@@ -13,7 +13,7 @@ export default function Som() {
   };
 
   return (
-    <div className="bg-white p-4 rounded-xl border border-black shadow text-sm text-gray-800 mt-10 max-w-md mx-auto">
+    <div className="bg-white p-4 rounded-x0 border border-black shadow text-sm text-gray-800 mt-10 w-[500px] h-full">
       <h3 className="text-lg font-bold mb-6 text-center">Simulador de Alarme</h3>
       <div className="flex flex-wrap gap-6 justify-center">
         <button
