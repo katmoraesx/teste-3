@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import mapaBase from "../../assets/IMGmapa.jpg";
+import mapaBase from "../../assets/IMGmapa.png";
 
 
 const predios = [
